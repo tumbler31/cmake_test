@@ -6,7 +6,7 @@ Write-Host " MyProject VS2022 Bootstrapper"
 Write-Host "===============================`n"
 
 # 🛠 Configuration
-$ProjectRoot   = Split-Path -Parent $MyInvocation.MyCommand.Definition
+$ProjectRoot   = Split-Path -Parent ../$MyInvocation.MyCommand.Definition
 $VcpkgDir      = Join-Path $ProjectRoot "vcpkg"
 $BuildDir      = Join-Path $ProjectRoot "build"
 $Triplet       = "x64-windows"
