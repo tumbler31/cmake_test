@@ -24,7 +24,7 @@ Make sure the following are installed before continuing:
 To configure the project and install dependencies:
 
 1. Open **PowerShell**
-2. Navigate to the root of the project
+2. Navigate to the scripts/
 3. Run:
 
    ```powershell
