@@ -13,7 +13,3 @@ target_include_directories(MyApp PRIVATE
     ${CMAKE_SOURCE_DIR}/modules
 )
 
-# Set the startup project to your chosen target
-set(MY_LAUNCH_TARGET MyApp)
-set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${MY_LAUNCH_TARGET})
-
