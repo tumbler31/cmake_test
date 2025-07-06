@@ -1,5 +1,1 @@
-.vs
-.git
 build/
-vcpkg/
-vcpkg_installed/
