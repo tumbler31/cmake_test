@@ -8,6 +8,7 @@ set(MY_LIBRARY_TARGET Logger)
 
 # GLOB all source and header files
 file(GLOB LOGGER_SOURCES CONFIGURE_DEPENDS
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
 )
 
