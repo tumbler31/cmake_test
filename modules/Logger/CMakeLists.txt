@@ -8,12 +8,11 @@ set(MY_LIBRARY_TARGET Logger)
 
 # GLOB all source and header files
 file(GLOB LOGGER_SOURCES CONFIGURE_DEPENDS
-    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
 )
 
 file(GLOB LOGGER_HEADERS CONFIGURE_DEPENDS
-    "${CMAKE_CURRENT_SOURCE_DIR}/*.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/*.h"
 )
 
 # Add the static library target
@@ -24,7 +23,7 @@ add_library(${MY_LIBRARY_TARGET} STATIC
 
 # Expose only the public header to consumers
 target_include_directories(${MY_LIBRARY_TARGET}
-    PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}
+    PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/include
     PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
 

@@ -9,7 +9,4 @@ add_executable(MyApp
 find_package(fmt REQUIRED)
 target_link_libraries(MyApp PRIVATE fmt::fmt Logger)
 
-target_include_directories(MyApp PRIVATE
-    ${CMAKE_SOURCE_DIR}/modules
-)
 

@@ -1,4 +1,6 @@
-#include "Logger2.h"
+#include "Logger/Log.h"
+
+#include <spdlog/spdlog.h>
 
 void Logger2::Test() const
 {
