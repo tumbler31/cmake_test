@@ -1,6 +1,6 @@
 #include <fmt/core.h>
 
-#include "Logger/log.h"
+#include "Logger/Log.h"
 
 
 int main() {
