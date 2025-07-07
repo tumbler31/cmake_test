@@ -6,7 +6,7 @@ Welcome! This guide helps you get started with building the project using Visual
 
 ---
 
-## 📦 Prerequisites
+## 📦 Prerequisites for Windows
 
 Make sure the following are installed before continuing:
 
@@ -17,16 +17,38 @@ Make sure the following are installed before continuing:
    Download the latest stable release here:  
    [CMake Windows Installer](https://github.com/Kitware/CMake/releases/download/v4.0.3/cmake-4.0.3-windows-x86_64.msi)
 
----
 
-## ⚙️ Usage
+## ⚙️ Usage for Windows
 
 To configure the project and install dependencies:
 
 1. Open **PowerShell**
-2. Navigate to the scripts/
+2. Navigate to the scripts/ folder
 3. Run:
 
    ```powershell
    .\setup-vs2022.ps1
 4. The .sln solution file will be found in the build/folder
+
+---
+
+## 📦 Prerequisites for Linux
+
+Make sure the following packages are installed before continuing:
+   ```bash
+   sudo apt-get install ninja-build build-essential pkg-config
+   ```
+
+## ⚙️ Usage for Linux
+
+To configure the project and install dependencies:
+
+1. Open **bash**
+2. Navigate to the scripts/ folder
+3. Run:
+
+   ```bash
+   ./setup-linux.sh
+4. Go to the project root and run:
+   ```bash
+   cmake --build --preset linux-release
