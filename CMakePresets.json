@@ -2,6 +2,17 @@
   "version": 5,
   "configurePresets": [
     {
+      "name": "linux-release",
+      "displayName": "Linux (Release)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/external/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "VCPKG_MANIFEST_MODE": "ON",
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
       "name": "vs2022-release",
       "displayName": "Visual Studio 2022 (Release)",
       "generator": "Visual Studio 17 2022",
@@ -12,6 +23,16 @@
         "VCPKG_MANIFEST_MODE": "ON",
         "CMAKE_BUILD_TYPE": "Release"
       }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "linux-release",
+      "configurePreset": "linux-release"
+    },
+    {
+      "name": "vs2022-release",
+      "configurePreset": "vs2022-release"
     }
   ]
 }
